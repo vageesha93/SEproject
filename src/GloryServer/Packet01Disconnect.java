@@ -4,7 +4,7 @@ import java.io.IOException;
 
 
 /*
-disconnect the client from server
+disconnecting the client from server
  */
 public class Packet01Disconnect extends Packet {
 
