@@ -21,7 +21,7 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
   private   Packet packet;
     public static JLabel lblweakest;
 
-    private ImageIcon imageIcon1,imageIcon2,imageIcon3,imageIcon4,imageIcon5;
+    private ImageIcon imageIcon1,imageIcon2,imageIcon3,imageIcon4,imageIcon5,imageiconback;
     private ImageIcon imageIcon1c,imageIcon2c,imageIcon3c,imageIcon4c,imageIcon5c;
 
     public ScoreViewandSetVowels() throws HeadlessException {
@@ -47,7 +47,7 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
             e.printStackTrace();
         }
 
-        ImageIcon   imageIconscoe = new ImageIcon(new ImageIcon("resources/GrayRoundedButton.png").getImage().getScaledInstance(350, 60, Image.SCALE_SMOOTH));
+        ImageIcon   imageIconscoe = new ImageIcon(new ImageIcon("resources/player_name.png").getImage().getScaledInstance(350, 60, Image.SCALE_SMOOTH));
 
 
         lblname=new JLabel("Score: ");
@@ -59,8 +59,8 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         lblname.setHorizontalTextPosition(SwingConstants.CENTER);
         lblname.setIcon(imageIconscoe);
 
-         imageIcon1= new ImageIcon(new ImageIcon("resources/1.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon1c= new ImageIcon(new ImageIcon("resources/click 1.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+         imageIcon1= new ImageIcon(new ImageIcon("resources/btn_no1_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon1c= new ImageIcon(new ImageIcon("resources/btn_no1_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblone=new JLabel();
         lblone.setBounds(100,294,101,111);
@@ -76,8 +76,8 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         lblweakest.setBorder(new EmptyBorder(0,0,0,0));
 
 
-        imageIcon2= new ImageIcon(new ImageIcon("resources/2.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon2c= new ImageIcon(new ImageIcon("resources/click 2.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon2= new ImageIcon(new ImageIcon("resources/btn_no2_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon2c= new ImageIcon(new ImageIcon("resources/btn_no2_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lbltwo=new JLabel();
         lbltwo.setBounds(262,294,101,111);
@@ -85,8 +85,8 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         lbltwo.setBorder(new EmptyBorder(0,0,0,0));
         lbltwo.addMouseListener(this);
 
-        imageIcon3= new ImageIcon(new ImageIcon("resources/3.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon3c= new ImageIcon(new ImageIcon("resources/click 3.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon3= new ImageIcon(new ImageIcon("resources/btn_no3_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon3c= new ImageIcon(new ImageIcon("resources/btn_no3_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblthree=new JLabel();
         lblthree.setBounds(423,294,101,111);
@@ -94,8 +94,8 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         lblthree.setBorder(new EmptyBorder(0,0,0,0));
         lblthree.addMouseListener(this);
 
-        imageIcon4= new ImageIcon(new ImageIcon("resources/4.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon4c= new ImageIcon(new ImageIcon("resources/click 4.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon4= new ImageIcon(new ImageIcon("resources/btn_no4_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon4c= new ImageIcon(new ImageIcon("resources/btn_no4_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblfour=new JLabel();
         lblfour.setBounds(587,294,101,111);
@@ -103,8 +103,8 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         lblfour.setBorder(new EmptyBorder(0,0,0,0));
         lblfour.addMouseListener(this);
 
-        imageIcon5= new ImageIcon(new ImageIcon("resources/5.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon5c= new ImageIcon(new ImageIcon("resources/click 5.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon5= new ImageIcon(new ImageIcon("resources/btn_no5_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon5c= new ImageIcon(new ImageIcon("resources/btn_no5_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblfive=new JLabel();
         lblfive.setBounds(750,294,101,111);
@@ -127,12 +127,12 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
 
 
 
-     ImageIcon   imageIconback = new ImageIcon(new ImageIcon("resources/vowels.jpg").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+      imageiconback = new ImageIcon(new ImageIcon("resources/bg_vowels.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
 
 
         jlblbackground=new JLabel();
         jlblbackground.setBorder(new EmptyBorder(0,0,0,0));
-        jlblbackground.setIcon(imageIconback);
+        jlblbackground.setIcon(imageiconback);
 
 
         c.add(lblweakest);

@@ -20,16 +20,17 @@ public class LoadingPage extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container c=getContentPane();
-        setLocationRelativeTo(null);
         setMaximumSize(dimension);
         setSize(dimension);
+        setTitle("Glory Game");
         setMinimumSize(dimension);
+        setLocationRelativeTo(null);
 
      // ImageIcon  imageIconback = new ImageIcon(new ImageIcon("resources/Splash75.gif").getImage().getScaledInstance(950, 534, Image.SCALE_SMOOTH));
 
         lblback=new JLabel();
         lblback.setBorder(new EmptyBorder(0,0,0,0));
-        lblback.setIcon(new ImageIcon("resources/Splash75.png"));
+        lblback.setIcon(new ImageIcon("resources/check5.gif"));
         lblback.setSize(dimension);
 
 

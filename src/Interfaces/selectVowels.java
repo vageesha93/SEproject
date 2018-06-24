@@ -50,8 +50,8 @@ public class selectVowels extends JFrame implements MouseListener {
 
 
 
-        imageIcon1= new ImageIcon(new ImageIcon("resources/1.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon1c= new ImageIcon(new ImageIcon("resources/click 1.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon1= new ImageIcon(new ImageIcon("resources/btn_no1_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon1c= new ImageIcon(new ImageIcon("resources/btn_no1_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblone=new JLabel();
         lblone.setBounds(100,294,101,111);
@@ -59,8 +59,8 @@ public class selectVowels extends JFrame implements MouseListener {
         lblone.setBorder(new EmptyBorder(0,0,0,0));
         lblone.addMouseListener(this);
 
-        imageIcon2= new ImageIcon(new ImageIcon("resources/2.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon2c= new ImageIcon(new ImageIcon("resources/click 2.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon2= new ImageIcon(new ImageIcon("resources/btn_no2_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon2c= new ImageIcon(new ImageIcon("resources/btn_no2_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lbltwo=new JLabel();
         lbltwo.setBounds(262,294,101,111);
@@ -68,8 +68,8 @@ public class selectVowels extends JFrame implements MouseListener {
         lbltwo.setBorder(new EmptyBorder(0,0,0,0));
         lbltwo.addMouseListener(this);
 
-        imageIcon3= new ImageIcon(new ImageIcon("resources/3.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon3c= new ImageIcon(new ImageIcon("resources/click 3.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon3= new ImageIcon(new ImageIcon("resources/btn_no3_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon3c= new ImageIcon(new ImageIcon("resources/btn_no3_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblthree=new JLabel();
         lblthree.setBounds(423,294,101,111);
@@ -77,8 +77,8 @@ public class selectVowels extends JFrame implements MouseListener {
         lblthree.setBorder(new EmptyBorder(0,0,0,0));
         lblthree.addMouseListener(this);
 
-        imageIcon4= new ImageIcon(new ImageIcon("resources/4.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon4c= new ImageIcon(new ImageIcon("resources/click 4.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon4= new ImageIcon(new ImageIcon("resources/btn_no4_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon4c= new ImageIcon(new ImageIcon("resources/btn_no4_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblfour=new JLabel();
         lblfour.setBounds(587,294,101,111);
@@ -86,8 +86,8 @@ public class selectVowels extends JFrame implements MouseListener {
         lblfour.setBorder(new EmptyBorder(0,0,0,0));
         lblfour.addMouseListener(this);
 
-        imageIcon5= new ImageIcon(new ImageIcon("resources/5.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
-        imageIcon5c= new ImageIcon(new ImageIcon("resources/click 5.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon5= new ImageIcon(new ImageIcon("resources/btn_no5_new.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
+        imageIcon5c= new ImageIcon(new ImageIcon("resources/btn_no5_new_click.png").getImage().getScaledInstance(101, 111, Image.SCALE_SMOOTH));
 
         lblfive=new JLabel();
         lblfive.setBounds(750,294,101,111);
@@ -102,7 +102,7 @@ public class selectVowels extends JFrame implements MouseListener {
 
 
 
-        ImageIcon   imageIconback = new ImageIcon(new ImageIcon("resources/vowels.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+        ImageIcon   imageIconback = new ImageIcon(new ImageIcon("resources/bg_vowels.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
 
 
         jlblbackground=new JLabel();
