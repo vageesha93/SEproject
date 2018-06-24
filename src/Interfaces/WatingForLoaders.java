@@ -27,10 +27,11 @@ public class WatingForLoaders extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container c=getContentPane();
-        setLocationRelativeTo(null);
+
         setMaximumSize(dimension);
         setSize(dimension);
         setMinimumSize(dimension);
+        setLocationRelativeTo(null);
 
         //lblask=new JLabel();
         Font   customFont = null;
@@ -45,7 +46,7 @@ public class WatingForLoaders extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        imageIconback = new ImageIcon(new ImageIcon("resources/waiting.jpg").getImage().getScaledInstance(950, 534, Image.SCALE_SMOOTH));
+        imageIconback = new ImageIcon(new ImageIcon("resources/bg_loading.png").getImage().getScaledInstance(950, 534, Image.SCALE_SMOOTH));
 
         lblback=new JLabel();
         lblback.setIcon(imageIconback);

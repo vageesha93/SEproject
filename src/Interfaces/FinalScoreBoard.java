@@ -28,10 +28,11 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container c=getContentPane();
-        setLocationRelativeTo(null);
+
         setMaximumSize(dimension);
         setSize(dimension);
         setMinimumSize(dimension);
+        setLocationRelativeTo(null);
 
         addWindowListener(this);
         ImageIcon imgplayagain = new ImageIcon(new ImageIcon("resources/close.png").getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH));
@@ -114,7 +115,7 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
         lblpscore5.setForeground(Color.magenta);
 
 
-        imgback = new ImageIcon(new ImageIcon("resources/Score.jpg").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+        imgback = new ImageIcon(new ImageIcon("resources/score_bg.jpg").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
        lblback =new JLabel();
         lblback.setBorder(new EmptyBorder(0,0,0,0));
         lblback.setIcon(imgback);

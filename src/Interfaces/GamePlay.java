@@ -47,10 +47,11 @@ public class GamePlay extends JFrame implements MouseListener{
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container c=getContentPane();
-        setLocationRelativeTo(null);
+
         setMaximumSize(dimension);
         setSize(dimension);
         setMinimumSize(dimension);
+        setLocationRelativeTo(null);
 
 
 
@@ -75,8 +76,8 @@ public class GamePlay extends JFrame implements MouseListener{
         jlblbackground=new JLabel();
         gloryfont =new Font("Arial",Font.BOLD,34);
 
-         imageIconclear = new ImageIcon(new ImageIcon("resources/clear.png").getImage().getScaledInstance(150, 47, Image.SCALE_SMOOTH));
-        imageIconclear2= new ImageIcon(new ImageIcon("resources/clear click.png").getImage().getScaledInstance(150, 47, Image.SCALE_SMOOTH));
+         imageIconclear = new ImageIcon(new ImageIcon("resources/btn_clear_new.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconclear2= new ImageIcon(new ImageIcon("resources/btn_clear_new_click.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
 
        addplayerlbl();
 
@@ -84,12 +85,13 @@ public class GamePlay extends JFrame implements MouseListener{
 
         lblclear=new JLabel();
         lblclear.setIcon(imageIconclear);
-        lblclear.setBounds(325,487,150,47);
+        lblclear.setBorder(new EmptyBorder(0, 0, 0, 0));
+        lblclear.setBounds(325,487,150,65);
         lblclear.setBorder(new EmptyBorder(0,0,0,0));
         lblclear.addMouseListener(this);
 
-         imageIconauto = new ImageIcon(new ImageIcon("resources/AutoGenerate.png").getImage().getScaledInstance(45, 45, Image.SCALE_SMOOTH));
-        imageIconauto2 = new ImageIcon(new ImageIcon("resources/AutoGenerate click.png").getImage().getScaledInstance(45, 45, Image.SCALE_SMOOTH));
+         imageIconauto = new ImageIcon(new ImageIcon("resources/btn_auto_new.png").getImage().getScaledInstance(45, 45, Image.SCALE_SMOOTH));
+        imageIconauto2 = new ImageIcon(new ImageIcon("resources/btn_auto_new_click.png").getImage().getScaledInstance(45, 45, Image.SCALE_SMOOTH));
 
         lblauto=new JLabel();
         lblauto.setIcon(imageIconauto);
@@ -104,15 +106,15 @@ public class GamePlay extends JFrame implements MouseListener{
         lblclose=new JLabel();
         lblclose.setIcon(imageIconclose);
         lblclose.setBorder(new EmptyBorder(0,0,0,0));
-        lblclose.setBounds(820,487,56,56);
+        lblclose.setBounds(850,487,56,56);
         lblclose.addMouseListener(this);
 
-        imageIconsubmit = new ImageIcon(new ImageIcon("resources/name.png").getImage().getScaledInstance(135, 47, Image.SCALE_SMOOTH));
+        imageIconsubmit = new ImageIcon(new ImageIcon("resources/player_name.png").getImage().getScaledInstance(135, 47, Image.SCALE_SMOOTH));
 
 
         lblcurrentplayer =new JLabel();
         lblcurrentplayer.setIcon(imageIconsubmit);
-        lblcurrentplayer.setBounds(645,487,135,47);
+        lblcurrentplayer.setBounds(660,495,135,47);
         lblcurrentplayer.setHorizontalTextPosition(SwingConstants.CENTER);
         lblcurrentplayer.setForeground(Color.magenta);
         lblcurrentplayer.setFont(new Font("Arial",Font.BOLD,18));
@@ -124,21 +126,21 @@ public class GamePlay extends JFrame implements MouseListener{
         lblroundnum=new JLabel("0");
         lblroundnum.setFont(customFont);
         lblroundnum.setForeground(Color.YELLOW);
-        lblroundnum.setBounds(555,487,86,80);
+        lblroundnum.setBounds(559,455,75,75);
 
         lbltimer=new JLabel("00");
         lbltimer.setFont(customFont.deriveFont(Font.BOLD));
         lbltimer.setForeground(Color.GREEN);
         lbltimer.setHorizontalAlignment(SwingConstants.CENTER);
-        lbltimer.setSize(100,100);
-        lbltimer.setLocation(48,400);
+        lbltimer.setSize(90,75);
+        lbltimer.setLocation(45,445);
 
         lblscore=new JLabel("15000");
         lblscore.setFont(new Font("Arial",Font.BOLD,26));
         lblscore.setForeground(Color.YELLOW);
-        lblscore.setBounds(850,11,100,50);
+        lblscore.setBounds(850,19,100,50);
 
-        imgback = new ImageIcon(new ImageIcon("resources/GameScreen.jpg").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+        imgback = new ImageIcon(new ImageIcon("resources/play_screen_bg_new.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
 
 
         jlblbackground.setBorder(new EmptyBorder(0,0,0,0));
@@ -199,70 +201,70 @@ public class GamePlay extends JFrame implements MouseListener{
 
     private void addplayerlbl(){
         player2=new JLabel();
-        player2.setBounds(35,51,100,15);
+        player2.setBounds(25,51,100,15);
         player2.setForeground(Color.magenta);
         player2.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp2score=new JLabel();
-        lblp2score.setBounds(115,51,85,15);
+        lblp2score.setBounds(75,51,85,15);
         lblp2score.setHorizontalAlignment(SwingConstants.CENTER);
         lblp2score.setForeground(Color.magenta);
         lblp2score.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp2init=new JLabel();
-        lblp2init.setBounds(200,51,85,15);
+        lblp2init.setBounds(158,51,85,15);
         lblp2init.setForeground(Color.magenta);
         lblp2init.setHorizontalAlignment(SwingConstants.CENTER);
         lblp2init.setBorder(new EmptyBorder(0,0,0,0));
 
         player3=new JLabel();
-        player3.setBounds(30,80,200,15);
+        player3.setBounds(25,80,200,15);
         player3.setForeground(Color.magenta);
         player3.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp3score=new JLabel();
-        lblp3score.setBounds(134,80,85,15);
+        lblp3score.setBounds(75,80,85,15);
         lblp3score.setHorizontalAlignment(SwingConstants.CENTER);
         lblp3score.setForeground(Color.magenta);
         lblp3score.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp3init=new JLabel();
-        lblp3init.setBounds(230,80,85,15);
+        lblp3init.setBounds(158,80,85,15);
         lblp3init.setForeground(Color.magenta);
         lblp3init.setHorizontalAlignment(SwingConstants.CENTER);
         lblp3init.setBorder(new EmptyBorder(0,0,0,0));
 
 
         player4=new JLabel();
-        player4.setBounds(30,107,200,15);
+        player4.setBounds(25,107,200,15);
         player4.setForeground(Color.magenta);
         player4.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp4score=new JLabel();
-        lblp4score.setBounds(134,107,85,15);
+        lblp4score.setBounds(75,107,85,15);
         lblp4score.setHorizontalAlignment(SwingConstants.CENTER);
         lblp4score.setForeground(Color.magenta);
         lblp4score.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp4init=new JLabel();
-        lblp4init.setBounds(230,107,85,15);
+        lblp4init.setBounds(158,107,85,15);
         lblp4init.setForeground(Color.magenta);
         lblp4init.setHorizontalAlignment(SwingConstants.CENTER);
         lblp4init.setBorder(new EmptyBorder(0,0,0,0));
 
         player5=new JLabel();
-        player5.setBounds(30,133,200,15);
+        player5.setBounds(25,133,200,15);
         player5.setForeground(Color.magenta);
         player5.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp5score=new JLabel();
-        lblp5score.setBounds(134,133,85,15);
+        lblp5score.setBounds(75,133,85,15);
         lblp5score.setHorizontalAlignment(SwingConstants.CENTER);
         lblp5score.setForeground(Color.magenta);
         lblp5score.setBorder(new EmptyBorder(0,0,0,0));
 
         lblp5init=new JLabel();
-        lblp5init.setBounds(230,133,85,15);
+        lblp5init.setBounds(158,133,85,15);
         lblp5init.setForeground(Color.magenta);
         lblp5init.setHorizontalAlignment(SwingConstants.CENTER);
         lblp5init.setBorder(new EmptyBorder(0,0,0,0));
@@ -479,14 +481,14 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl11.setFont(gloryfont);
         lbl11.setForeground(Color.CYAN);
         lbl11.setSize(40,40);
-        lbl11.setLocation(870,180);
+        lbl11.setLocation(850,195);
         lbl11.addMouseListener(this);
 
         lbl10=new JLabel();
         lbl10.setFont(gloryfont);
         lbl10.setForeground(Color.CYAN);
         lbl10.setSize(40,40);
-        lbl10.setLocation(823,180);
+        lbl10.setLocation(803,195);
         lbl10.addMouseListener(this);
 
 
@@ -494,14 +496,14 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl9.setFont(gloryfont);
         lbl9.setForeground(Color.CYAN);
         lbl9.setSize(40,40);
-        lbl9.setLocation(776,180);
+        lbl9.setLocation(751,195);
         lbl9.addMouseListener(this);
 
         lbl8=new JLabel();
         lbl8.setFont(gloryfont);
         lbl8.setForeground(Color.CYAN);
         lbl8.setSize(40,40);
-        lbl8.setLocation(729,180);
+        lbl8.setLocation(704,195);
         lbl8.addMouseListener(this);
 
 
@@ -509,7 +511,7 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl7.setFont(gloryfont);
         lbl7.setForeground(Color.CYAN);
         lbl7.setSize(40,40);
-        lbl7.setLocation(682,180);
+        lbl7.setLocation(657,195);
         lbl7.addMouseListener(this);
 
 
@@ -517,7 +519,7 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl6.setFont(gloryfont);
         lbl6.setForeground(Color.CYAN);
         lbl6.setSize(40,40);
-        lbl6.setLocation(635,180);
+        lbl6.setLocation(610,195);
         lbl6.addMouseListener(this);
 
 
@@ -525,7 +527,7 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl5.setFont(gloryfont);
         lbl5.setForeground(Color.CYAN);
         lbl5.setSize(40,40);
-        lbl5.setLocation(588,180);
+        lbl5.setLocation(560,195);
         lbl5.addMouseListener(this);
 
 
@@ -533,7 +535,7 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl4.setFont(gloryfont);
         lbl4.setForeground(Color.CYAN);
         lbl4.setSize(40,40);
-        lbl4.setLocation(541,180);
+        lbl4.setLocation(516,195);
         lbl4.addMouseListener(this);
 
 
@@ -541,7 +543,7 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl3.setFont(gloryfont);
         lbl3.setForeground(Color.magenta);
         lbl3.setSize(40,40);
-        lbl3.setLocation(494,180);
+        lbl3.setLocation(469,195);
         lbl3.addMouseListener(this);
 
 
@@ -549,14 +551,14 @@ public class GamePlay extends JFrame implements MouseListener{
         lbl2.setFont(gloryfont);
         lbl2.setForeground(Color.magenta);
         lbl2.setSize(40,40);
-        lbl2.setLocation(447,180);
+        lbl2.setLocation(422,195);
         lbl2.addMouseListener(this);
 
         lbl1 =new JLabel();
         lbl1.setFont(gloryfont);
         lbl1.setForeground(Color.magenta);
         lbl1.setSize(40,40);
-        lbl1.setLocation(400,180);
+        lbl1.setLocation(372,195);
         lbl1.addMouseListener(this);
     }
   private void addresultlbl(){
@@ -572,77 +574,77 @@ public class GamePlay extends JFrame implements MouseListener{
       lblrst11.setFont(gloryfont);
       lblrst11.setForeground(Color.YELLOW);
       lblrst11.setSize(40,40);
-      lblrst11.setLocation(870,345);
+      lblrst11.setLocation(850,312);
       lblrst11.addMouseListener(this);
 
       lblrst10=new JLabel();
       lblrst10.setFont(gloryfont);
       lblrst10.setForeground(Color.YELLOW);
       lblrst10.setSize(40,40);
-      lblrst10.setLocation(823,345);
+      lblrst10.setLocation(803,312);
       lblrst10.addMouseListener(this);
 
       lblrst9=new JLabel();
       lblrst9.setFont(gloryfont);
       lblrst9.setForeground(Color.YELLOW);
       lblrst9.setSize(40,40);
-      lblrst9.setLocation(734776,345);
+      lblrst9.setLocation(751,312);
       lblrst9.addMouseListener(this);
 
       lblrst8=new JLabel();
       lblrst8.setFont(gloryfont);
       lblrst8.setForeground(Color.YELLOW);
       lblrst8.setSize(40,40);
-      lblrst8.setLocation(729,345);
+      lblrst8.setLocation(704,312);
       lblrst8.addMouseListener(this);
 
       lblrst7=new JLabel();
       lblrst7.setFont(gloryfont);
       lblrst7.setForeground(Color.YELLOW);
       lblrst7.setSize(40,40);
-      lblrst7.setLocation(682,345);
+      lblrst7.setLocation(657,312);
       lblrst7.addMouseListener(this);
 
       lblrst6=new JLabel();
       lblrst6.setFont(gloryfont);
       lblrst6.setForeground(Color.YELLOW);
       lblrst6.setSize(40,40);
-      lblrst6.setLocation(635,345);
+      lblrst6.setLocation(610,312);
       lblrst6.addMouseListener(this);
 
       lblrst5=new JLabel();
       lblrst5.setFont(gloryfont);
       lblrst5.setForeground(Color.YELLOW);
       lblrst5.setSize(40,40);
-      lblrst5.setLocation(588,345);
+      lblrst5.setLocation(560,312);
       lblrst5.addMouseListener(this);
 
       lblrst4=new JLabel();
       lblrst4.setFont(gloryfont);
       lblrst4.setForeground(Color.YELLOW);
       lblrst4.setSize(40,40);
-      lblrst4.setLocation(541,345);
+      lblrst4.setLocation(516,312);
       lblrst4.addMouseListener(this);
 
       lblrst3=new JLabel();
       lblrst3.setFont(gloryfont);
       lblrst3.setForeground(Color.YELLOW);
       lblrst3.setSize(40,40);
-      lblrst3.setLocation(494,345);
+      lblrst3.setLocation(469,312);
       lblrst3.addMouseListener(this);
 
       lblrst2=new JLabel();
       lblrst2.setFont(gloryfont);
       lblrst2.setForeground(Color.YELLOW);
       lblrst2.setSize(40,40);
-      lblrst2.setLocation(447,345);
+      lblrst2.setLocation(422,312);
       lblrst2.addMouseListener(this);
 
       lblrst1=new JLabel();
       lblrst1.setFont(gloryfont);
       lblrst1.setForeground(Color.YELLOW);
       lblrst1.setSize(40,40);
-      lblrst1.setLocation(400,345);
+      lblrst1.setLocation(372,312);
       lblrst1.addMouseListener(this);
 
   }

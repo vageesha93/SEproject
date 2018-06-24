@@ -37,10 +37,12 @@ public class GloryMenu extends JFrame implements MouseListener {
         dimension.setSize(950, 600);
        Container  c = getContentPane();
         setVisible(true);
-        setLocationRelativeTo(null);
+
         setMaximumSize(dimension);
         setSize(dimension);
+        setTitle("Glory Game");
         setMinimumSize(dimension);
+        setLocationRelativeTo(null);
 
 
 
@@ -80,14 +82,14 @@ public class GloryMenu extends JFrame implements MouseListener {
         //textBoxTransparan.setText("Glory Game");
         textBoxTransparan.setFont(customFont);
 
-        imageIconback = new ImageIcon(new ImageIcon("resources/username.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+        imageIconback = new ImageIcon(new ImageIcon("resources/checkbg1.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
 
         jlblbackground = new JLabel();
         jlblbackground.setBorder(new EmptyBorder(0, 0, 0, 0));
         jlblbackground.setIcon(imageIconback);
 
-        imageIconplay = new ImageIcon(new ImageIcon("resources/Play.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
-        imageIconplay2 = new ImageIcon(new ImageIcon("resources/Playclick.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconplay = new ImageIcon(new ImageIcon("resources/btn_play_new.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconplay2 = new ImageIcon(new ImageIcon("resources/btn_play_new_click.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
 
         lblplay = new JLabel();
         lblplay.setIcon(imageIconplay);
@@ -96,8 +98,8 @@ public class GloryMenu extends JFrame implements MouseListener {
         lblplay.addMouseListener(this);
 
         //imageIconpexit = new ImageIcon(new ImageIcon("/resources/Exitclick.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
-        imageIconpexit2 = new ImageIcon(new ImageIcon("resources/Exitclick.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
-        imageIconpexit = new ImageIcon(new ImageIcon("resources/Exit1.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconpexit2 = new ImageIcon(new ImageIcon("resources/btn_exit_new_click.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconpexit = new ImageIcon(new ImageIcon("resources/btn_exit_new.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
 
 
         lblexit = new JLabel();
@@ -106,8 +108,8 @@ public class GloryMenu extends JFrame implements MouseListener {
         lblexit.setIcon(imageIconpexit);
         lblexit.addMouseListener(this);
 
-        imageIconhelp = new ImageIcon(new ImageIcon("resources/Help.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
-        imageIconhelp2 = new ImageIcon(new ImageIcon("resources/Helpclick.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconhelp = new ImageIcon(new ImageIcon("resources/btn_help_new.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
+        imageIconhelp2 = new ImageIcon(new ImageIcon("resources/btn_help_new_click.png").getImage().getScaledInstance(150, 65, Image.SCALE_SMOOTH));
 
         lblhelp = new JLabel();
         lblhelp.setBorder(new EmptyBorder(0, 0, 0, 0));
