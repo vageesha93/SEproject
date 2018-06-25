@@ -30,6 +30,7 @@ public class ScoreViewandSetVowels extends JFrame implements MouseListener  {
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
        setSize(950,600);
+        setTitle("Glory Game");
         setLocationRelativeTo(null);
 
         Font lblfont=null;

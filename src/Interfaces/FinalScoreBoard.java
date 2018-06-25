@@ -31,6 +31,7 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
 
         setMaximumSize(dimension);
         setSize(dimension);
+        setTitle("Glory Game");
         setMinimumSize(dimension);
         setLocationRelativeTo(null);
 
@@ -115,7 +116,7 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
         lblpscore5.setForeground(Color.magenta);
 
 
-        imgback = new ImageIcon(new ImageIcon("resources/score_bg.jpg").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
+        imgback = new ImageIcon(new ImageIcon("resources/game_over_bg.png").getImage().getScaledInstance(950, 600, Image.SCALE_SMOOTH));
        lblback =new JLabel();
         lblback.setBorder(new EmptyBorder(0,0,0,0));
         lblback.setIcon(imgback);

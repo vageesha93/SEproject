@@ -50,6 +50,7 @@ public class GamePlay extends JFrame implements MouseListener{
 
         setMaximumSize(dimension);
         setSize(dimension);
+        setTitle("Glory Game");
         setMinimumSize(dimension);
         setLocationRelativeTo(null);
 
