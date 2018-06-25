@@ -29,6 +29,7 @@ public class WatingForLoaders extends JFrame {
         Container c=getContentPane();
 
         setMaximumSize(dimension);
+        setTitle("Glory Game");
         setSize(dimension);
         setMinimumSize(dimension);
         setLocationRelativeTo(null);

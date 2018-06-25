@@ -1,7 +1,7 @@
 package GloryServer;
 
 
-public class GameSpace {
+public class  GameSpace {
 
     private int gameRoomid;
     private Player[] player;

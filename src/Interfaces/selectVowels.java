@@ -27,7 +27,7 @@ public class selectVowels extends JFrame implements MouseListener {
         Container c=getContentPane();
         setVisible(true);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
+        setTitle("Glory Game");
         setSize(950,600);
         setLocationRelativeTo(null);
 
