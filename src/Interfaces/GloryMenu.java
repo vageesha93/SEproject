@@ -175,7 +175,7 @@ public class GloryMenu extends JFrame implements MouseListener {
     }else if (e.getComponent()==lblhelp){
             URI uri = null;
             try {
-                uri = new URL("https://www.google.lk/").toURI();
+                uri = new URL("https://drive.google.com/open?id=1okA4jNmErxoePUSmvpruMs0rveBMRQnn").toURI();
             } catch (URISyntaxException e1) {
                 e1.printStackTrace();
             } catch (MalformedURLException e1) {

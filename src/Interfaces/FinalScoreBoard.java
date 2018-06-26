@@ -19,7 +19,7 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
     public static JLabel  lblpname1,lblpname2,lblpname3,lblpname4,lblpname5;
     public static JLabel lblpscore1,lblpscore2,lblpscore3,lblpscore4,lblpscore5;
     private JLabel lblback,lblplayagain;
-    private ImageIcon imgback;
+    private ImageIcon imgback ;
     private Packet packet;
 
     public FinalScoreBoard() throws HeadlessException {
@@ -44,6 +44,16 @@ public class FinalScoreBoard extends JFrame implements MouseListener,WindowListe
         lblplayagain.setIcon(imgplayagain);
         lblplayagain.setBorder(new EmptyBorder(0,0,0,0));
         lblplayagain.addMouseListener(this);
+        addWindowListener(this);
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon("resources/playagain.png").getImage().getScaledInstance(60, 60, Image.SCALE_SMOOTH));
+
+
+        lblback=new JLabel();
+        lblback.setBounds(100,500,60,60);
+        lblback.setIcon(imgplayagain);
+        lblback.setBorder(new EmptyBorder(0,0,0,0));
+        lblback.addMouseListener(this);
+
 
         lblpname1=new JLabel("Please Wait...");
         lblpname1.setBounds(205,275,250,30);

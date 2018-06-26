@@ -78,16 +78,12 @@ public class Player extends GloryElement {
         score=score+rpv;
     }
 
-    /*
-     public access method that returns this value as mentioned in assignment
-    */
+
     public int getScore() {
         return score;
     }
 
-    /*
-     public set method for changing value as mentioned in assignment  
-    */
+
     public void setScore(int score) {
         this.score += score;
     }
